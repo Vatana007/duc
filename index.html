@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Battambang' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./asset/DUC-Logo.png">
+    <title>សាកលវិទ្យាល័យឌីជីថលកម្ពុជា</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="nav-container">
+            <div class="brand">
+                <img src="./asset/DUC-Logo.png" alt="">
+                <a href="#" class="logo">សាកលវិទ្យាល័យឌីជីថលកម្ពុជា</a>
+            </div>
+            <div class="nav-links">
+                <a href="#slideshow">ទំព័រដើម</a>
+                <a href="./html/scholarship.html">អាហាររូបករណ៍</a>
+                <a href="#professional">គ្រូបង្រៀន</a>
+                <a href="./html/contact.html">ទំនាក់ទំនង</a>
+            </div>
+            <div class="auth-links">
+                <a href="#"><i class="fas fa-user-plus"></i>បង្កើតគណនី</a>
+                <a href="#"><i class="fas fa-sign-in-alt"></i>ចូលគណនី</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#slideshow">ទំព័រដើម</a>
+            <a href="./html/scholarship.html">អាហាររូបករណ៍</a>
+            <a href="#professional">គ្រូបង្រៀន</a>
+            <a href="./html/contact.html">ទំនាក់ទំនង</a>
+            <a href="#"><i class="fas fa-user-plus"></i> បង្កើតគណនី</a>
+            <a href="#"><i class="fas fa-sign-in-alt"></i> ចូលគណនី</a>
+        </div>
+    </nav>
+
+    <!-- SlideShow -->
+    <div class="slideshow-container" id="slideshow">
+        <div class="slides-wrapper">
+            <div class="slide">
+                <img src="./asset/duc1.jpg" alt="Smart Watch Pro">
+                <div class="slide-content">
+                    <h2>Smart Watch Pro</h2>
+                    <p>Track your fitness and stay connected with our latest smartwatch.</p>
+                    <a href="#" class="btn">ទាក់ទងឥឡូវ</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./asset/duc3.jpg" alt="Wireless Headphones">
+                <div class="slide-content">
+                    <h2>Wireless Headphones</h2>
+                    <p>Immerse yourself in music with our noise-cancelling headphones.</p>
+                    <a href="#" class="btn">ទាក់ទងឥឡូវ</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./asset/duc6.jpg" alt="Wireless Headphones">
+                <div class="slide-content">
+                    <h2>Wireless Headphones</h2>
+                    <p>Immerse yourself in music with our noise-cancelling headphones.</p>
+                    <a href="#" class="btn">ទាក់ទងឥឡូវ</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./asset/duc5.jpg" alt="Wireless Headphones">
+                <div class="slide-content">
+                    <h2>Wireless Headphones</h2>
+                    <p>Immerse yourself in music with our noise-cancelling headphones.</p>
+                    <a href="#" class="btn">ទាក់ទងឥឡូវ</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!-- Curriculum -->
+
+    <div class="container">
+        <section class="study-programs">
+            <h2>កម្មវិធីសិក្សា</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <img src="./asset/dit.jpg" alt="ព័ត៌មានវិទ្យា">
+                    <div class="card-content">
+                        <h3>ព័ត៌មានវិទ្យា</h3>
+                        <p>ផ្តោតលើការអភិវឌ្ឍកម្មវិធី សន្តិសុខបណ្តាញ និងបញ្ញាសិប្បនិម្មិត។</p>
+                        <button onclick="applyForProgram('ព័ត៌មានវិទ្យា')">ដាក់ពាក្យ</button>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="./asset/dee.jpg" alt="បង្រៀនភាសាអង់គ្លេស">
+                    <div class="card-content">
+                        <h3>បង្រៀនភាសាអង់គ្លេស</h3>
+                        <p>រៀនអំពីការគ្រប់គ្រងហិរញ្ញវត្ថុ ទីផ្សារ និងយុទ្ធសាស្ត្រអាជីវកម្ម។</p>
+                        <button onclick="applyForProgram('បង្រៀនភាសាអង់គ្លេស')">ដាក់ពាក្យ</button>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="./asset/ddm.jpg" alt="ទីផ្សារឌីជីថល">
+                    <div class="card-content">
+                        <h3>ទីផ្សារឌីជីថល</h3>
+                        <p>ត្រៀមខ្លួនសម្រាប់អាជីពក្នុងវិស័យវេជ្ជសាស្ត្រ និងការថែទាំសុខភាព។</p>
+                        <button onclick="applyForProgram('ទីផ្សារឌីជីថល')">ដាក់ពាក្យ</button>
+                    </div>
+                </div>
+            </div>
+            <a href="./html/Curriculum.html"><button class="view-more-btn" onclick="togglePrograms()">
+                    មើលបន្ថែម <i class="fas fa-chevron-right"></i>
+                </button></a>
+        </section>
+    </div>
+
+    <!-- Professional -->
+
+    <div class="container-professional" id="professional">
+        <section class="study-programs">
+            <h2>សាស្រ្តាចារ្យ</h2>
+            <div class="program-grid">
+                <div class="professional-card">
+                    <img src="./asset/dit.jpg" alt="ព័ត៌មានវិទ្យា">
+                    <div class="card-content">
+                        <h3>ដេប៉ាតឺម៉ង់ ៖ ព័ត៌មានវិទ្យា</h3>
+                        <h3>សាស្រ្តាចារ្យ ៖ សែ ណេត</h3>
+                        <button onclick="applyForProgram('ព័ត៌មានវិទ្យា')">សាកសួរព័ត៌មាន</button>
+                    </div>
+                </div>
+                <div class="professional-card">
+                    <img src="./asset/dit.jpg" alt="ព័ត៌មានវិទ្យា">
+                    <div class="card-content">
+                        <h3>ដេប៉ាតឺម៉ង់ ៖ បង្រៀនភាសាអង់គ្លេស</h3>
+                        <h3>សាស្រ្តាចារ្យ ៖ សេង សំណាង</h3>
+                        <button onclick="applyForProgram('ព័ត៌មានវិទ្យា')">សាកសួរព័ត៌មាន</button>
+                    </div>
+                </div>
+                <div class="professional-card">
+                    <img src="./asset/dit.jpg" alt="ព័ត៌មានវិទ្យា">
+                    <div class="card-content">
+                        <h3>ដេប៉ាតឺម៉ង់ ៖ ក្សេត្រសាស្រ្ត និងសាកវប្បកម្ម</h3>
+                        <h3>សាស្រ្តាចារ្យ ៖ ជឿម សែម</h3>
+                        <button onclick="applyForProgram('ព័ត៌មានវិទ្យា')">សាកសួរព័ត៌មាន</button>
+                    </div>
+                </div>
+            </div>
+            <a href="./html/professional.html"><button class="view-more-btn" onclick="togglePrograms()">
+                    មើលបន្ថែម <i class="fas fa-chevron-right"></i>
+                </button></a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>អំពីសាកលវិទ្យាល័យឌីជីថលកម្ពុជា</h3>
+                <p>សាកលវិទ្យាល័យរបស់យើងផ្តល់ជូននូវការអប់រំដ៏ល្អឥតខ្ចោះជាមួយនឹងកម្មវិធីសិក្សាចម្រុះ និងទំនើប។</p>
+                <p>បេសកកម្មរបស់យើងគឺជំរុញការច្នៃប្រឌិត និងភាពជាអ្នកដឹកនាំ។</p>
+            </div>
+            <div class="footer-section">
+                <h3>ទំនាក់ទំនង</h3>
+                <p>អាសយដ្ឋាន: ភូមិត្រពាំងស្លា ឃុំព្រះនិព្វាន ស្រុកគងពិសី ខេត្តកំពង់ស្ពឺ</p>
+                <p>ទូរស័ព្ទ: ០៩៦៥៦៦៧៧៧៤</p>
+                <p>អ៊ីមែល: d.u.cambodia2023@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/DUCambodia/" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@ducambodia" aria-label="Twitter"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/ducambodia" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@DUCambodia" aria-label="Youtube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://t.me/Digital_University_Of_Cambodia" aria-label="Telegram"><i
+                            class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>ទីតាំងរបស់សាកលវិទ្យាល័យឌីជីថលកម្ពុជា</h3>
+                <div class="map-container">
+                    <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=523&amp;height=400&amp;hl=en&amp;q=%20Digital%20University%20of%20Cambodia+(Digital%20University%20of%20Cambodia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href='https://clouddevs.com/google-maps-generator/'>Maps Generator</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; ២០២៥ រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ សាកលវិទ្យាល័យឌីជីថលកម្ពុជា</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
